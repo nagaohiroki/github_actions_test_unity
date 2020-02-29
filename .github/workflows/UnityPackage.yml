@@ -7,8 +7,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      UNITY_ROOT: /Applications/Unity/Hub/Editor/2019.3.2f1/Unity.app
+    with:
+      projectPath: /UnityProject
+      unityVersion: 2019.3.2f1
+      targetPlatform: WebGL
     
     steps:
     - uses: webbertakken/unity-builder@v0.11
